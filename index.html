@@ -14,9 +14,9 @@
             <table>
                 <tr>
                     <td><input class="button"  type="button" onclick="clearbox()" value="c"></td>
-                    <td><input class="button" type="button" onclick="displayvalue('<')"  value="<"></td>
+                    <td><input class="button" type="button" onclick="backspace()"  value="<"></td>
                     <td><input class="button" type="button" onclick="displayvalue('/')"  value="/"></td>
-                    <td><input class="button" type="button"  value="*"></td>
+                    <td><input class="button" type="button"  onclick="displayvalue('*')" value="*"></td>
                     
                 </tr>  
                 <tr>
@@ -38,8 +38,8 @@
                     <td rowspan="5"><input class="button"  type="button" style="height: 107px;" onclick="evaluateexpression()" value="="></td>
                 </tr>   
                 <tr>
-                    <td colspan="2"><input class="button" style="width:105px" type="button" value="0"></td>
-                    <td><input class="button"  type="button" value="."></td>
+                    <td colspan="2"><input class="button" style="width:105px" type="button" onclick="displayvalue('0')" value="0"></td>
+                    <td><input class="button"  type="button" onclick="displayvalue('.')" value="."></td>
                 </tr>                       
             </table>
         </form>
